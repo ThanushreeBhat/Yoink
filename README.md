@@ -1,37 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🟢 Yoink – Campus Marketplace
 
-## Getting Started
+**Yoink** is a hyper-local campus marketplace designed specifically for Gen Z students.  
+It enables students to buy and sell physical items (**Loot**) and offer or hire services (**Gigs**) within their university ecosystem.
 
-First, run the development server:
+> **Tagline:** Grab it before it’s gone.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Project Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+College students frequently need to exchange items and services such as textbooks, electronics, printouts, and assignment help. Existing platforms are either too generic, unsafe, or inefficient for campus-specific needs.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Yoink** solves this problem by providing:
+- A campus-focused marketplace
+- Direct peer-to-peer interaction
+- Fast transactions using familiar tools like WhatsApp and UPI
+- A bold Gen Z–friendly user interface
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Problem Statement
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Lack of a centralized, trusted platform for campus-based buying and selling
+- Dependence on unorganized WhatsApp groups
+- Generic marketplaces that do not ensure locality or trust
+- High friction in communication and payments
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 💡 Proposed Solution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Yoink provides a **dual marketplace** system that allows students to:
+- Sell or buy physical items (Loot)
+- Offer or hire services (Gigs)
+- Communicate instantly via WhatsApp
+- Complete payments using UPI QR codes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# Yoink" 
+The platform removes middlemen and platform fees, making transactions fast and direct.
+
+---
+
+## 🚀 Features
+
+### 🔄 Dual Marketplace
+- **Loot:** Textbooks, electronics, hostel items
+- **Gigs:** Printouts, tutoring, technical support
+- Easy toggle between Loot and Gigs on the home page
+
+### 🔐 Authentication
+- Secure Email/Password login using Firebase Authentication
+
+### 🧾 Onboarding Flow
+- Collects essential details after signup:
+  - University / College
+  - WhatsApp Number
+  - UPI ID (optional)
+
+### ➕ Create Listings (“Drop a Yoink”)
+- Simple form with:
+  - Title
+  - Description
+  - Price
+  - Image URL
+  - Pricing models for gigs (Per Page / Per Hour / Fixed)
+
+### 👤 Profile & Personal Listings
+- Profile icon on home page
+- Dropdown options:
+  - **Your Yoinks** – View user’s own listings
+  - **Logout**
+
+### 💬 Direct Transactions
+- **Slide into DMs** → WhatsApp redirection
+- **Scan & Pay** → UPI QR code generation
+- No in-app chat or platform fees
+
+---
+
+## 🎨 UI & UX Design
+
+- **Gen Z Neobrutalist Design**
+  - High-contrast black & white
+  - Thick black borders
+  - Chunky buttons
+  - Bold typography
+  - Lime green accent color (`#a3e635`)
+- Interactive hover effects
+- Mobile-first responsive design
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **Next.js (App Router)**
+- **JavaScript (ES6+)**
+- **Tailwind CSS**
+- React Hooks
+
+### Backend (Serverless)
+- **Firebase Authentication**
+- **Cloud Firestore (NoSQL Database)**
+
+### Development Tools
+- npm
+- ESLint
+- VS Code
+
+---
+
